@@ -1,7 +1,7 @@
 import re
 frequency = {}
 unique = {}
-book = open("huckleberry.txt", "r", encoding="utf8")
+book = open("input.txt", "r", encoding="utf8")
 out1 = open("allwords.txt", "w")
 out2 = open("uniquewords.txt", "w")
 out3 = open("wordfrequency.txt", "w")
@@ -29,4 +29,3 @@ for key, value in unique.items():
         frequency[unique[key]] += 1
 for key,value in frequency.items():
     out3.write(str(key) + ": " + str(frequency[key]) + "\n")
-
